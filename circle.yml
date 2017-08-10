@@ -1,0 +1,18 @@
+machine:
+  python:
+    version: 3.6.2
+
+
+dependencies:
+  pre:
+    - pip install -U pip
+  override:
+    - pip install -e '.[testing]'
+
+test:
+  pre:
+    - mkdir -p $CIRCLE_TEST_REPORTS/django
+  override:
+    - py.test -v:
+        environment:
+          PYTEST_PROCESSES: 1
