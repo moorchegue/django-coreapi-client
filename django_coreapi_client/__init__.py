@@ -8,6 +8,7 @@ class Client(object):
 
     client = None
     schema = None
+    _auth = None
     _name = None
     _keys = []
 
@@ -26,15 +27,20 @@ class Client(object):
 
         self.client = client
         self.schema = schema
-        self._keys = keys
         self._name = name
+        self._keys = keys
+        self._auth = auth
 
     def __getattr__(self, key):
         if key in self.__dict__:
             return self.__dict__[key]
 
-        keys = self._keys + [key]
-        return self.__class__(self._name, keys)
+        return self.__class__(
+            self._name,
+            self._keys + [key],
+            self._auth,
+            self.client,
+            self.schema)
 
     def __getitem__(self, key):
         return self.__getattr__(key)
