@@ -1,7 +1,7 @@
-0.2.2 (unreleased)
+1.0.0 (2017-08-11)
 ------------------
 
-- Nothing changed yet.
+- Releasing v1.0.0 to PyPi.
 
 
 0.2.1 (2017-08-11)
