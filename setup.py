@@ -24,8 +24,14 @@ tests_require = [
     'pytest>=3.0',
 ]
 
+dev_require = [
+    'django_extensions',
+    'ipython',
+]
+
 extras_require = {
     'testing': tests_require,
+    'dev': dev_require,
 }
 
 
