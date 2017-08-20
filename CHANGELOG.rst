@@ -1,7 +1,7 @@
-1.0.2 (unreleased)
+1.1.0 (2017-08-20)
 ------------------
 
-- Nothing changed yet.
+- Loosening Django version.
 
 
 1.0.1 (2017-08-11)
