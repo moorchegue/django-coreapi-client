@@ -16,7 +16,7 @@ changelog = read('CHANGELOG.rst')
 version = read('VERSION').strip()
 
 install_requires = [
-    'Django>=1.11',
+    'Django>=1.5',
     'coreapi>=2.3',
 ]
 
