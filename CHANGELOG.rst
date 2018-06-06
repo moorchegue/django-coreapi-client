@@ -1,7 +1,7 @@
-1.1.1 (unreleased)
+1.1.1 (2018-06-06)
 ------------------
 
-- Nothing changed yet.
+- #movingtogitlab
 
 
 1.1.0 (2017-08-20)
