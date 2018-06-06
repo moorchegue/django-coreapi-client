@@ -42,7 +42,7 @@ setup(
     long_description=readme + '\n\n' + changelog,
     author='murchik',
     author_email='murchik@protonmail.com',
-    url='https://github.com/vericant/django-coreapi-client',
+    url='https://gitlab.com/murchik/django-coreapi-client',
     packages=[package for package in find_packages()],
     install_requires=install_requires,
     tests_require=tests_require,
